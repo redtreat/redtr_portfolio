@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#21090f">
+  <meta name="description" content="REDtr — a structured visual archive and artwork portfolio.">
+  <title>REDtr — Visual Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" data-cursor aria-hidden="true"><span>VIEW</span></div>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top" aria-label="REDtr home">
+        <span class="wordmark-main">RED</span><span class="wordmark-accent">tr</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#gallery">Works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-meta">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="mono">VISUAL ARCHIVE / 2026</span>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false"
+          aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="#gallery">01 <span>Works</span></a>
+      <a href="#about">02 <span>About</span></a>
+      <a href="#contact">03 <span>Contact</span></a>
+    </nav>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="shell hero-layout">
+        <div class="hero-aside">
+          <span class="section-label mono">01 / INTRO</span>
+          <div class="vertical-rule"></div>
+          <span class="mono hero-aside-bottom">PH / VISUALS</span>
+        </div>
+
+        <div class="hero-main">
+          <div class="hero-kicker-row">
+            <p class="eyebrow">A personal collection of visual works</p>
+            <span class="mono hero-index">001—011</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span>RED</span>
+            <span class="outline">tr</span>
+          </h1>
+
+          <div class="hero-summary">
+            <p>
+              A curated visual portfolio showcasing selected artworks, creative explorations, and visual expressions.
+
+Explore a collection where each work is presented with intention, clarity, and space to be appreciated.
+            </p>
+            <a class="primary-link" href="#gallery">
+              <span>Explore the collection</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Collection information">
+          <div class="panel-top">
+            <span class="mono">CURRENT ARCHIVE</span>
+            <span class="mono">20 / 26</span>
+          </div>
+          <div class="panel-count">
+            <strong data-artwork-count>11</strong>
+            <span>works</span>
+          </div>
+          <p>
+            Tap any work to open the focused viewer. Use the search field to find a specific piece.
+          </p>
+        </aside>
+      </div>
+
+      <div class="shell hero-footer">
+        <span class="mono">SCROLL TO EXPLORE</span>
+        <span class="scroll-line" aria-hidden="true"><i></i></span>
+        <span class="mono">REDtr / ARCHIVE</span>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="shell section-intro">
+        <div>
+          <p class="section-label mono">02 / SELECTED WORKS</p>
+          <h2 id="gallery-heading">Things I made.<br><em>Some good, some questionable.</em></h2>
+        </div>
+
+        <div class="section-description">
+          <p>
+            Welcome to the part where I pretend everything was intentional.
+          </p>
+        </div>
+      </div>
+
+      <div class="shell gallery-tools">
+        <label class="search" for="artwork-search">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="artwork-search" type="search" placeholder="Search by title, number, category, or tag" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+
+        <div class="gallery-status">
+          <span class="mono">SHOWING</span>
+          <strong data-visible-count>11</strong>
+          <span class="mono">/ <span data-artwork-count>11</span></span>
+        </div>
+      </div>
+
+      <div class="shell gallery" data-gallery>
+        <article class="artwork-card" data-artwork="1">
+          <button class="artwork-trigger" type="button" aria-label="View Artwork 01">
+            <span class="image-wrap"><img src="artworks/1.jpg" alt="Artwork 01" loading="lazy" decoding="async"></span>
+          </button>
+          <div class="card-meta">
+            <span class="mono">01</span>
+            <div>
+              <strong data-card-title>Artwork 01</strong>
+              <span data-card-category>Archive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artwork-card" data-artwork="2">
+          <button class="artwork-trigger" type="button" aria-label="View Artwork 02">
+            <span class="image-wrap"><img src="artworks/2.jpg" alt="Artwork 02" loading="lazy" decoding="async"></span>
+          </button>
+          <div class="card-meta">
+            <span class="mono">02</span>
+            <div>
+              <strong data-card-title>Artwork 02</strong>
+              <span data-card-category>Archive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artwork-card" data-artwork="3">
+          <button class="artwork-trigger" type="button" aria-label="View Artwork 03">
+            <span class="image-wrap"><img src="artworks/3.jpg" alt="Artwork 03" loading="lazy" decoding="async"></span>
+          </button>
+          <div class="card-meta">
+            <span class="mono">03</span>
+            <div>
+              <strong data-card-title>Artwork 03</strong>
+              <span data-card-category>Archive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artwork-card" data-artwork="4">
+          <button class="artwork-trigger" type="button" aria-label="View Artwork 04">
+            <span class="image-wrap"><img src="artworks/4.jpg" alt="Artwork 04" loading="lazy" decoding="async"></span>
+          </button>
+          <div class="card-meta">
+            <span class="mono">04</span>
+            <div>
+              <strong data-card-title>Artwork 04</strong>
+              <span data-card-category>Archive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artwork-card" data-artwork="5">
+          <button class="artwork-trigger" type="button" aria-label="View Artwork 05">
+            <span class="image-wrap"><img src="artworks/5.jpg" alt="Artwork 05" loading="lazy" decoding="async"></span>
+          </button>
+          <div class="card-meta">
+            <span class="mono">05</span>
+            <div>
+              <strong data-card-title>Artwork 05</strong>
+              <span data-card-category>Archive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artwork-card" data-artwork="6">
+          <button class="artwork-trigger" type="button" aria-label="View Artwork 06">
+            <span class="image-wrap"><img src="artworks/6.jpg" alt="Artwork 06" loading="lazy" decoding="async"></span>
+          </button>
+          <div class="card-meta">
+            <span class="mono">06</span>
+            <div>
+              <strong data-card-title>Artwork 06</strong>
+              <span data-card-category>Archive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artwork-card" data-artwork="7">
+          <button class="artwork-trigger" type="button" aria-label="View Artwork 07">
+            <span class="image-wrap"><img src="artworks/7.jpg" alt="Artwork 07" loading="lazy" decoding="async"></span>
+          </button>
+          <div class="card-meta">
+            <span class="mono">07</span>
+            <div>
+              <strong data-card-title>Artwork 07</strong>
+              <span data-card-category>Archive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artwork-card" data-artwork="8">
+          <button class="artwork-trigger" type="button" aria-label="View Artwork 08">
+            <span class="image-wrap"><img src="artworks/8.jpg" alt="Artwork 08" loading="lazy" decoding="async"></span>
+          </button>
+          <div class="card-meta">
+            <span class="mono">08</span>
+            <div>
+              <strong data-card-title>Artwork 08</strong>
+              <span data-card-category>Archive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artwork-card" data-artwork="9">
+          <button class="artwork-trigger" type="button" aria-label="View Artwork 09">
+            <span class="image-wrap"><img src="artworks/9.jpg" alt="Artwork 09" loading="lazy" decoding="async"></span>
+          </button>
+          <div class="card-meta">
+            <span class="mono">09</span>
+            <div>
+              <strong data-card-title>Artwork 09</strong>
+              <span data-card-category>Archive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artwork-card" data-artwork="10">
+          <button class="artwork-trigger" type="button" aria-label="View Artwork 10">
+            <span class="image-wrap"><img src="artworks/10.jpg" alt="Artwork 10" loading="lazy" decoding="async"></span>
+          </button>
+          <div class="card-meta">
+            <span class="mono">10</span>
+            <div>
+              <strong data-card-title>Artwork 10</strong>
+              <span data-card-category>Still cooking</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artwork-card" data-artwork="11">
+          <button class="artwork-trigger" type="button" aria-label="View Artwork 11">
+            <span class="image-wrap"><img src="artworks/11.jpg" alt="Artwork 11" loading="lazy" decoding="async"></span>
+          </button>
+          <div class="card-meta">
+            <span class="mono">11</span>
+            <div>
+              <strong data-card-title>Artwork 11</strong>
+              <span data-card-category>Not finished. Neither am I</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="shell gallery-empty" data-gallery-empty hidden>
+        <span class="mono">NO MATCHES</span>
+        <strong>Nothing found in this collection.</strong>
+        <button class="inline-button" type="button" data-clear-search>Clear search</button>
+      </div>
+
+      <div class="shell gallery-actions">
+        <button class="discover" type="button" data-discover>
+          <span>Open a random work</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="shell about-grid">
+        <div>
+          <p class="section-label mono">03 / ABOUT</p>
+          <h2 id="about-heading">Made with<br><em>intent.</em></h2>
+        </div>
+
+        <div class="about-content">
+          <p class="about-lead">
+            I am REDtr, exploring visual expression through art and creative experiments. Each piece captures an idea, a feeling, or a moment of creativity.
+          </p>
+
+          <div class="about-columns">
+            <div>
+              <span class="mono">APPROACH</span>
+              <p>I explore ideas through visual expression, balancing experimentation with intention. Each work begins with a concept and develops through the creative process.</p>
+            </div>
+            <div>
+              <span class="mono">ARCHIVE</span>
+              <p>A growing collection of my artworks, experiments, and selected pieces, documenting my creative journey and evolving visual style.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="shell contact-grid">
+        <div>
+          <p class="section-label mono">04 / CONTACT</p>
+          <h2 id="contact-heading">Let's<br><em>connect.</em></h2>
+        </div>
+
+        <div class="contact-panel">
+          <p>Eh</p>
+          <div class="contact-links">
+            <a href="unavailable">
+              <span>Email</span><span aria-hidden="true">↗</span>
+            </a>
+            <a href="#" aria-label="https://www.instagram.com/redtreatjas?stkn=MTY4amo0cTQ3MG81YQ==">
+              <span>Instagram</span><span aria-hidden="true">↗</span>
+            </a>
+            <a href="#" aria-label="Facebook placeholder">
+              <span>Facebook</span><span aria-hidden="true">↗</span>
+            </a>
+            <a href="#" aria-label="https://www.behance.net/redtreatjas">
+              <span>Behance</span><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span class="footer-brand">RED<span>tr</span></span>
+      <span class="mono">© <span data-year></span> / VISUAL ARCHIVE</span>
+      <a href="#top">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <dialog class="viewer" data-viewer aria-labelledby="viewer-title">
+    <div class="viewer-backdrop" data-close-viewer></div>
+
+    <div class="viewer-shell">
+      <header class="viewer-head">
+        <div class="viewer-brand">RED<span>tr</span></div>
+        <div class="viewer-meta">
+          <span class="mono" data-viewer-number>01 / 11</span>
+          <strong id="viewer-title" data-viewer-title>Artwork 01</strong>
+        </div>
+        <button class="viewer-close" type="button" data-close aria-label="Close artwork viewer">
+          Close <span>×</span>
+        </button>
+      </header>
+
+      <div class="viewer-stage" data-viewer-stage>
+        <button class="viewer-nav prev" type="button" data-prev aria-label="Previous artwork">←</button>
+
+        <figure class="viewer-figure" data-viewer-figure>
+          <img data-viewer-image src="" alt="" draggable="false">
+        </figure>
+
+        <button class="viewer-nav next" type="button" data-next aria-label="Next artwork">→</button>
+
+        <div class="viewer-side-meta">
+          <span class="mono">VIEWING</span>
+          <strong data-viewer-title-side>Artwork 01</strong>
+          <span class="side-rule"></span>
+          <span class="mono" data-zoom-level>100%</span>
+        </div>
+      </div>
+
+      <footer class="viewer-foot">
+        <div class="viewer-tools" role="group" aria-label="Artwork tools">
+          <button type="button" data-zoom-out aria-label="Zoom out">−</button>
+          <button type="button" data-zoom-reset>Reset</button>
+          <button type="button" data-zoom-in aria-label="Zoom in">+</button>
+          <button type="button" data-fullscreen>Fullscreen</button>
+        </div>
+
+        <div class="viewer-slideshow">
+          <button type="button" data-slideshow-toggle aria-pressed="false">Play</button>
+          <div class="progress-track" aria-hidden="true"><span data-progress></span></div>
+        </div>
+      </footer>
+
+      <div class="thumbnail-wrap">
+        <div class="thumbnail-track" data-thumbnail-track role="listbox" aria-label="Artwork thumbnails" tabindex="0"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="sr-only" aria-live="polite" data-live-region></div>
+  <script src="script.js"></script>
+</body>
+</html>
